@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="944,895" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="944,1225" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
       <x:String>Microsoft.VisualBasic</x:String>
@@ -80,10 +80,9 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="559,830" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="559,1160" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Table" />
       <Variable x:TypeArguments="x:String" Name="output" />
@@ -93,12 +92,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="497,292" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please choose LINQ Example!" OptionsString="01. LINQ Filter Data Table;02. LINQ Join Function;03. LINQ Group Function;04. LINQ Let Function;05. LINQ Sum Function;06. LINQ IF Condition;07. LINQ For XML;08. LINQ Cast Function;09. LINQ Convert Data Table to Dictionary;10. LINQ Average Function;11. LINQ Convert Data Table to HTML String;12. LINQ Remove Duplicate;13. LINQ Compare Two Data Tables;14. LINQ Get Newest File From Directory;15. LINQ Take Function;16. LINQ Skip Function;17. LINQ Where Function;18. LINQ TakeWhile Function;19. LINQ SkipWhile Function;20. LINQ Select Function;21. LINQ SelectMany Function;22. LINQ All Function;23. LINQ Any Function;24. LINQ ElementAt;25. LINQ First Operator;26. LINQ Last Operator;27. LINQ Single Operator;28. LINQ DefaultIfEmpty Operator;29. LINQ TakeLast Operator;30. LINQ SkipLast Operator;31. LINQ Sequence Equal Operator;32. LINQ OfType Operator;33. LINQ Range Operator;34. LINQ Transpose Data Table;35. LINQ Convert HTML String to Data Table;36. LINQ Prime Number;37. LINQ First Working Day;38. LINQ Vlookup Basic Method;39. LINQ Vlookup Complex Method" Title="LINQ Menu">
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="497,292" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please choose LINQ Example!" OptionsString="01. LINQ Filter Data Table;02. LINQ Join Function;03. LINQ Group Function;04. LINQ Let Function;05. LINQ Sum Function;06. LINQ IF Condition;07. LINQ For XML;08. LINQ Cast Function;09. LINQ Convert Data Table to Dictionary;10. LINQ Average Function;11. LINQ Convert Data Table to HTML String;12. LINQ Remove Duplicate;13. LINQ Compare Two Data Tables;14. LINQ Get Newest File From Directory;15. LINQ Take Function;16. LINQ Skip Function;17. LINQ TakeWhile Function;18. LINQ SkipWhile Function;19. LINQ All Function;20. LINQ Any Function;21. LINQ ElementAt;25. LINQ First Operator;26. LINQ Last Operator;27. LINQ Single Operator;28. LINQ DefaultIfEmpty Operator;29. LINQ TakeLast Operator;30. LINQ SkipLast Operator;31. LINQ Sequence Equal Operator;32. LINQ OfType Operator;33. LINQ Range Operator;34. LINQ Transpose Data Table;35. LINQ Convert HTML String to Data Table;36. LINQ Prime Number;37. LINQ First Working Day;38. LINQ Vlookup Basic Method;39. LINQ Vlookup Complex Method" Title="LINQ Menu">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[output]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[output]" sap:VirtualizedContainerService.HintSize="497,387" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[output]" sap:VirtualizedContainerService.HintSize="497,717" sap2010:WorkflowViewState.IdRef="Switch`1_1">
       <Switch.Default>
         <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Error Input&quot;]" />
       </Switch.Default>
@@ -115,6 +114,65 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="05. LINQ Sum Function" DisplayName="Invoke 05-LINQ_Sum_Function workflow" sap:VirtualizedContainerService.HintSize="375,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="LINQ File\05-LINQ_Sum_Function.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="06. LINQ IF Condition" DisplayName="Invoke 06-LINQ_IF_Condition workflow" sap:VirtualizedContainerService.HintSize="366,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="LINQ File\06-LINQ_IF_Condition.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <x:Null x:Key="07. LINQ For XML" />
+      <x:Null x:Key="08. LINQ Cast Function" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="09. LINQ Convert Data Table to Dictionary" DisplayName="Invoke 09-LINQ_Convert_Data_Table_to_Dictionary workflow" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="LINQ File\09-LINQ_Convert_Data_Table_to_Dictionary.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="10. LINQ Average Function" DisplayName="Invoke 10-LINQ_Average_Function workflow" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="LINQ File\10-LINQ_Average_Function.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <x:Null x:Key="11. LINQ Convert Data Table to HTML String" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="12. LINQ Remove Duplicate" DisplayName="Invoke 12-LINQ_Remove_Duplicate workflow" sap:VirtualizedContainerService.HintSize="355,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="LINQ File\12-LINQ_Remove_Duplicate.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <x:Null x:Key="13. LINQ Compare Two Data Tables" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="14. LINQ Get Newest File From Directory" DisplayName="Invoke 14-LINQ_Get_Newest_File_From_Directory workflow" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="LINQ File\14-LINQ_Get_Newest_File_From_Directory.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="15. LINQ Take Function" DisplayName="Invoke 15-LINQ_Take_Function workflow" sap:VirtualizedContainerService.HintSize="374,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="LINQ File\15-LINQ_Take_Function.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="16. LINQ Skip Function" DisplayName="Invoke 16-LINQ_Skip_Function workflow" sap:VirtualizedContainerService.HintSize="373,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="LINQ File\16-LINQ_Skip_Function.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="17. LINQ TakeWhile Function" DisplayName="Invoke 17-LINQ_TakeWhile_Function workflow" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="LINQ File\17-LINQ_TakeWhile_Function.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="18. LINQ SkipWhile Function" DisplayName="Invoke 18-LINQ_SkipWhile_Function workflow" sap:VirtualizedContainerService.HintSize="379,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="LINQ File\18-LINQ_SkipWhile_Function.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="19. LINQ All Function" DisplayName="Invoke 19-LINQ_All_Function workflow" sap:VirtualizedContainerService.HintSize="365,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="LINQ File\19-LINQ_All_Function.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="20. LINQ Any Function" DisplayName="Invoke 20-LINQ_Any_Function workflow" sap:VirtualizedContainerService.HintSize="372,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="LINQ File\20-LINQ_Any_Function.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />
         </ui:InvokeWorkflowFile.Arguments>

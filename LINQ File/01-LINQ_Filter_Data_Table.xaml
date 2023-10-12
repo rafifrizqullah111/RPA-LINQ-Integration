@@ -155,7 +155,7 @@
     </ui:MultipleAssign>
     <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="484,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[folder_done+file_name_done]" />
     <ui:ReadCsvFile DataTable="[dt_table]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[folder_data+file_name_data]" sap:VirtualizedContainerService.HintSize="484,153" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
-    <Assign DisplayName="Filter Data Table" sap:VirtualizedContainerService.HintSize="484,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="LINQ Filter Data Table" sap:VirtualizedContainerService.HintSize="484,83" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[dt_table_filtered]</OutArgument>
       </Assign.To>
